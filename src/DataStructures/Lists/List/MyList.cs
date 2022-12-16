@@ -1,4 +1,4 @@
-﻿namespace DataStructuresAndAlgorithms.Lists.List
+﻿namespace DataStructuresAndAlgorithms.DataStructures.Lists.List
 {
     using System.Collections;
 

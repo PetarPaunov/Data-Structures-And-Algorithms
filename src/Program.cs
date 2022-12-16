@@ -1,26 +1,10 @@
-﻿using DataStructuresAndAlgorithms.Lists.LinkedList;
+﻿using DataStructuresAndAlgorithms.Algorithms.BubbleSort;
 
-var linkedList = new MyLinkedList<int>();
+var array = new int[] {8, 4, 2, 5, 1, 3, 6, 7, 8, 4, 2, 5, 1, 3, 6, 7 };
 
-linkedList.InsertLast(1);
-linkedList.InsertLast(2);
-linkedList.InsertLast(3);
-linkedList.InsertLast(4);
-linkedList.InsertLast(5);
+array = BubbleSort.Sort(array);
 
-var index = linkedList.IndexOf(3);
-
-linkedList.InsertAt(index, 123);
-
-
-// linkedList.DeleteFirst();
-//linkedList.DeleteLast();
-//linkedList.DeleteLast();
-
-
-foreach (var item in linkedList)
+for (int i = 0; i < array.Length; i++)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(array[i]);
 }
-
-Console.WriteLine(linkedList.IndexOf(123));
