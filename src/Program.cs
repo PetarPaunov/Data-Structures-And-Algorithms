@@ -1,16 +1,13 @@
-﻿using DataStructuresAndAlgorithms.Algorithms.BubbleSort;
-using DataStructuresAndAlgorithms.Algorithms.MergeSort;
-using DataStructuresAndAlgorithms.Algorithms.SelectionSort;
+﻿using DataStructuresAndAlgorithms.DataStructures.Stack;
 
-var array = new int[20];
-var random = new Random();
+var stack = new MyStack<string>();
 
-for (int i = 0; i < array.Length; i++)
+stack.Push("Test1");
+stack.Push("Test2");
+stack.Push("Test3");
+stack.Push("Test4");
+
+foreach (var item in stack)
 {
-    array[i] = new Random().Next(20000);
+    Console.WriteLine(item);   
 }
-
-Console.WriteLine("Start");
-MergeSort.Sort(array);
-Console.WriteLine("Finish");
-
