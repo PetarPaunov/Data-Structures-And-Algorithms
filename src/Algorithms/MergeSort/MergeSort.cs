@@ -11,7 +11,7 @@
                 return;
             }
 
-            var midIndex = array.Length / 2;
+            var midIndex = arrayLength / 2;
 
             var leftHalf = new int[midIndex];
             var rightHalf = new int[arrayLength - midIndex];
